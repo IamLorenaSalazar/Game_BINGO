@@ -1,0 +1,159 @@
+
+label {
+  font-size: 20px;
+}
+#player-info {
+  margin-bottom: 20px;
+}
+
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+#start-button {
+  background-color: #219241;
+  color: white;
+}
+
+#restart-button {
+  background-color: #192fbf;
+  color: white;
+}
+
+.bingo-card {
+  background-color: #fafafa;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  display: inline-block;
+}
+
+
+.bingo-card td {
+  text-align: center;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fafafa;
+  position: relative;
+  font-size: 20px;
+}
+
+
+.bingo-card td.marked::after {
+  content: "X";
+  color: rgb(16, 183, 52);
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+#winner-display {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body {
+  background-color: #fafafa;
+  margin: 0;
+  font-family:   Arial, sans-serif;
+  text-align: center;
+}
+
+#gerar-cartela {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  background-color: #f3212f;
+  color: white;
+}
+
+input {
+  border-radius: 15px;
+  margin: 10px;
+  height: 25px;
+  width: 380px;
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+#drawn-numbers-container {
+  max-width: 350px !important;
+  background-color: #25e922;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: -webkit-center;
+}
+
+#drawn-numbers-container h3 {
+  margin-top: 0px;
+  max-width: 350px !important;
+}
+
+#drawn-numbers {
+  width: 80px;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+#drawn-numbers th {
+  background-color: #21a82a;
+  color: white;
+  padding: 10px;
+}
+
+#drawn-numbers td {
+  padding: 10px;
+  text-align: center;
+  background-color: #f29292;
+}
+
+#drawn-numbers-container {
+  background-color: #fafafa;
+  flex: 1;
+  margin-left: 30px;
+}
+
+.game-container {
+  width: 100%;
+  display: flexbox;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+
+footer{
+  position: fixed;
+  bottom: 0px;
+  background-color: #7170b6;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  color: white;
+}
